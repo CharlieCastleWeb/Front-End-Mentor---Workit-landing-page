@@ -1,0 +1,181 @@
+/* RESET */
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe, figure, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, code, em, img, small, strike, strong, sub, sup, tt, b, u, i, ol, ul, li, fieldset, form, label, table, caption, tbody, tfoot, thead, tr, th, td, main, canvas, embed, footer, header, nav, section, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: none;
+     -moz-text-size-adjust: none;
+          text-size-adjust: none;
+}
+
+footer, header, nav, section, main {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+input {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+/* VARIABLES */
+/* TYPOGRAPHY */
+@font-face {
+  font-family: "Fraunces";
+  src: url("../../assets/fonts/fraunces/Fraunces-VariableFont_SOFT,WONK,opsz,wght.ttf");
+}
+@font-face {
+  font-family: "Manrope";
+  src: url("../../assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
+}
+body {
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 32px;
+  color: #24053E;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+h1 {
+  font-family: Fraunces;
+  color: white;
+  text-align: center;
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+  font-variation-settings: "wght" 600, "opsz" 144;
+}
+
+.hero a {
+  line-height: 2rem;
+  text-align: center;
+  text-decoration: none;
+  font-variation-settings: "wght" 700;
+}
+
+.benefits {
+  text-align: center;
+}
+
+.benefit-number,
+.benefit h2 {
+  font-family: Fraunces;
+  font-size: 1.25rem;
+  line-height: 2.25rem;
+  font-variation-settings: "wght" 600, "opsz" 144;
+}
+
+.benefit-description {
+  line-height: 1.75rem;
+}
+
+/* LAYOUT */
+header,
+.hero {
+  background-color: #24053E;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 1rem;
+  padding-top: 2rem;
+}
+
+header img {
+  width: 27.64%;
+}
+
+header a {
+  border-bottom: 3px solid #44FFA1;
+}
+
+.hero {
+  padding-top: 4rem;
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+  position: relative;
+  padding-bottom: 4rem;
+}
+
+h1 {
+  width: 85%;
+  margin: 0 auto;
+}
+
+.underline {
+  border-bottom: 3px solid #44FFA1;
+}
+
+.hero a {
+  display: block;
+  margin: 0 auto;
+  padding: 0.6875rem 0;
+  background-color: #44FFA1;
+  width: 35.47%;
+  margin-bottom: 3rem;
+}
+
+.hero img {
+  width: 85.33%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.access img {
+  width: 50%;
+}
+
+.benefits {
+  margin-top: 10rem;
+}
+
+.benefit {
+  margin-top: 2.5rem;
+}
+
+.benefit-number {
+  margin: 0 auto;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid #24053E;
+  border-radius: 50%;
+}
+
+.benefit h2 {
+  margin-top: 1.5rem;
+}/*# sourceMappingURL=styles.css.map */

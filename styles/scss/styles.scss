@@ -1,0 +1,147 @@
+/* RESET */
+
+@import 'reset';
+
+/* VARIABLES */
+
+$dark-purple: #24053E;
+$green: #44FFA1;
+$purple: #584D62;
+$light-purple: #FCF8FF;
+
+/* TYPOGRAPHY */
+
+@font-face {
+    font-family: 'Fraunces';
+    src: url('../../assets/fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf');
+}
+
+@font-face {
+    font-family: 'Manrope';
+    src: url('../../assets/fonts/manrope/Manrope-VariableFont_wght.ttf');
+}
+
+body {
+    font-family: 'Manrope';
+    font-size: 16px;
+    line-height: 32px;
+    color: $dark-purple;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+h1 {
+    font-family: Fraunces;
+    color: white;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 3.125rem;
+    font-variation-settings: "wght" 600, "opsz" 144;
+
+}
+
+.hero a {
+    line-height: 2rem;
+    text-align: center;
+    text-decoration: none;
+    font-variation-settings: "wght" 700;
+}
+
+.benefits {
+    text-align: center;
+}
+
+.benefit-number,
+.benefit h2 {
+    font-family: Fraunces;
+    font-size: 1.25rem;
+    line-height: 2.25rem;
+    font-variation-settings: "wght" 600, "opsz" 144;
+}
+
+.benefit-description {
+    line-height: 1.75rem;
+}
+
+/* LAYOUT */
+
+header,
+.hero {
+    background-color: $dark-purple;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem;
+    padding-top: 2rem;
+}
+
+header img {
+    width: 27.64%;
+}
+
+header a {
+    border-bottom: 3px solid $green;
+}
+
+.hero {
+    padding-top: 4rem;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    position: relative;
+    padding-bottom: 4rem;
+}
+
+h1 {
+    width: 85%;
+    margin: 0 auto;
+}
+
+.underline {
+    border-bottom: 3px solid $green;
+}
+
+.hero a {
+    display: block;
+    margin: 0 auto;
+    padding: 0.6875rem 0;
+    background-color: $green;
+    width: 35.47%;
+    margin-bottom: 3rem;
+}
+
+.hero img {
+    width: 85.33%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.access img {
+    width: 50%;
+}
+
+.benefits {
+    margin-top: 10rem;
+}
+
+.benefit {
+    margin-top: 2.5rem;
+}
+
+.benefit-number {
+    margin: 0 auto;
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid $dark-purple;
+    border-radius: 50%;
+}
+
+.benefit h2 {
+    margin-top: 1.5rem;
+}
+
