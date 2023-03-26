@@ -31,16 +31,23 @@ body {
 header a {
     color: white;
     text-decoration: none;
+    font-variation-settings: "wght" 600;
 }
 
 h1 {
     font-family: Fraunces;
     color: white;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 3.125rem;
     line-height: 3.125rem;
     font-variation-settings: "wght" 600, "opsz" 144;
+}
 
+.underline {
+    text-decoration: underline;
+    text-decoration-color: $green;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
 }
 
 .hero a {
@@ -57,19 +64,42 @@ h1 {
 .benefit-number,
 .benefit h2 {
     font-family: Fraunces;
-    font-size: 1.25rem;
     line-height: 2.25rem;
     font-variation-settings: "wght" 600, "opsz" 144;
+}
+
+.benefit-number {
+    font-size: 1.25rem;
+}
+
+.benefit h2 {
+    font-size: 1.75rem;
 }
 
 .benefit-description {
     line-height: 1.75rem;
 }
 
+.access-card {
+    color: white;
+    text-align: center;
+}
+
+h3 {
+    font-family: Fraunces;
+    font-size: 2rem;
+    font-variation-settings: "wght" 600, "opsz" 144;;
+    line-height: 3rem;
+}
+
+.access-card a {
+    text-decoration: none;
+    font-variation-settings: "wght" 700;
+}
+
 /* LAYOUT */
 
-header,
-.hero {
+header {
     background-color: $dark-purple;
 }
 
@@ -90,10 +120,32 @@ header a {
 
 .hero {
     padding-top: 4rem;
-    border-bottom-left-radius: 50%;
-    border-bottom-right-radius: 50%;
     position: relative;
     padding-bottom: 4rem;
+    margin-bottom: -25px;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $dark-purple;
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 25px;
+    
+    border-radius: 0 0 50% 50%;
+    background-color: $dark-purple;
 }
 
 h1 {
@@ -101,9 +153,7 @@ h1 {
     margin: 0 auto;
 }
 
-.underline {
-    border-bottom: 3px solid $green;
-}
+
 
 .hero a {
     display: block;
@@ -111,26 +161,27 @@ h1 {
     padding: 0.6875rem 0;
     background-color: $green;
     width: 35.47%;
-    margin-bottom: 3rem;
+    margin-top: 2.5rem;
+    margin-bottom: 5.3rem;
 }
 
 .hero img {
     width: 85.33%;
     position: absolute;
-    left: 50%;
+    top: 79%;
+    z-index: 2;
+    left: 52%;
     transform: translateX(-50%);
 }
 
-.access img {
-    width: 50%;
-}
-
 .benefits {
-    margin-top: 10rem;
+    padding-top: 9.3rem;
+    background-color: $light-purple;
+    padding-bottom: 5rem;
 }
 
 .benefit {
-    margin-top: 2.5rem;
+    margin-top: 2.4rem;
 }
 
 .benefit-number {
@@ -139,9 +190,85 @@ h1 {
     height: 3rem;
     border: 1px solid $dark-purple;
     border-radius: 50%;
+    padding-top: 0.3rem;
 }
 
 .benefit h2 {
     margin-top: 1.5rem;
+}
+
+.benefit-description {
+    margin: 0 1rem;
+    margin-top: 1rem;
+}
+
+.access img {
+    display: block;
+    width: 74.94%;
+    margin: 0 auto;
+    position: relative;
+    z-index: -1;
+}
+
+.access-card {
+    background-color: $dark-purple;
+    margin: 0 1rem;
+    margin-top: -3.25rem;
+    z-index: 1;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+
+.access-card p {
+    margin-top: 1rem;
+    padding: 0 1.9rem;
+}
+
+.access-card a {
+    display: block;
+    background-color: $green;
+    margin: 1.5rem auto;
+    padding: 0.6875rem 0;
+    width: 50.15%;
+}
+
+footer {
+    margin-top: 4.625rem;
+    margin-bottom: 4rem;
+}
+
+footer img {
+    display: block;
+    margin: 0 auto;
+    width: 25.55%;
+}
+
+.social-media {
+    width: 30%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.6rem;
+}
+
+.social-logo {
+    width: 1.25rem;
+    height: 1.25rem;
+    background-color: $purple;
+}
+
+.facebook-logo {
+    mask: url("../../assets/images/icon-facebook.svg");
+    mask-repeat: no-repeat;
+}
+
+.instagram-logo {
+    mask: url("../../assets/images/icon-instagram.svg");
+}
+
+.twitter-logo {
+    mask: url("../../assets/images/icon-twitter.svg");
+    mask-position: center;
+    mask-repeat: no-repeat;
 }
 
