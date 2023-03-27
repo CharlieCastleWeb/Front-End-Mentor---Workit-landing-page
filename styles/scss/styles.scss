@@ -156,8 +156,6 @@ h1 {
     margin: 0 auto;
 }
 
-
-
 .hero a {
     display: block;
     margin: 0 auto;
@@ -291,3 +289,76 @@ footer img {
     mask-repeat: no-repeat;
 }
 
+
+/* TABLET LAYOUT */
+
+@media (min-width: 650px) {
+    
+    header {
+        padding: 0 2.5rem;
+        padding-top: 2rem;
+    }
+
+    header img {
+        width: 13.01%;
+    }
+
+    .hero {
+        padding-top: 3.5rem;
+        padding-bottom: 7.4rem;
+        margin-bottom: -125px;
+    }
+
+    h1 {
+        font-size: 3.75rem;
+        line-height: 3.75rem;
+        width: 60%;
+    }
+
+    .hero a {
+        width: 18%;
+    }
+
+    .hero::before {
+        background-image:   url("../../assets/images/bg-pattern-2.svg"),
+                            url("../../assets/images/bg-pattern-3.svg");
+        background-repeat: no-repeat, no-repeat;
+        background-position: 116% 63%, -44% 5%;
+        background-size: auto, 42%;
+        
+    
+    }
+
+    .hero::after {
+        height: 125px;
+        border-radius: 0 0 90% 90%;
+        transform: scaleX(1.1);
+    }
+
+    .hero img {
+        width: 68%;
+        // position: absolute;
+        top: 68%;
+        left: 53%;
+        // z-index: 2;
+        // transform: translateX(-50%);
+    }
+
+    .benefits {
+        padding-top: 15rem; 
+    }
+
+    /*.benefits {
+    padding-bottom: 4.6rem;
+    margin-bottom: 6rem;
+    position: relative;
+    z-index: -1;
+    }*/
+
+    .benefit h2 {
+        
+    }
+    
+
+
+}
