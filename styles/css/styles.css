@@ -134,6 +134,10 @@ h3 {
   font-variation-settings: "wght" 700;
 }
 
+.access-card p {
+  line-height: 1.75rem;
+}
+
 /* LAYOUT */
 header {
   background-color: #24053E;
@@ -209,8 +213,23 @@ h1 {
 
 .benefits {
   padding-top: 9.3rem;
+  padding-bottom: 4.6rem;
+  margin-bottom: 6rem;
+  position: relative;
+  z-index: -1;
+}
+
+.benefits::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: #FCF8FF;
-  padding-bottom: 5rem;
+  border-radius: 0 0 50% 50%/0 0 100% 100%;
+  transform: scaleX(6);
+  z-index: -2;
 }
 
 .benefit {
@@ -261,6 +280,7 @@ h1 {
   display: block;
   background-color: #44FFA1;
   margin: 1.5rem auto;
+  margin-bottom: 1.05rem;
   padding: 0.6875rem 0;
   width: 50.15%;
 }
@@ -277,7 +297,7 @@ footer img {
 }
 
 .social-media {
-  width: 30%;
+  width: 31%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
