@@ -159,6 +159,10 @@ header a {
   border-bottom: 3px solid #44FFA1;
 }
 
+main {
+  overflow: hidden;
+}
+
 .hero {
   padding-top: 4rem;
   position: relative;
@@ -372,11 +376,11 @@ footer img {
   }
   .benefits {
     padding-top: 17.5rem;
-    visibility: hidden;
   }
   .benefits::before {
     border-radius: 0 0 80% 80%/0 0 100% 100%;
-    transform: scaleX(2);
+    transform: scaleX(3);
+    top: 4%;
   }
   .benefit {
     width: 74.61%;
