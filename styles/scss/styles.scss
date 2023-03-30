@@ -70,6 +70,7 @@ h1 {
 
 .benefit-number {
     font-size: 1.25rem;
+    text-align: center;
 }
 
 .benefit h2 {
@@ -300,7 +301,7 @@ footer img {
     }
 
     header img {
-        width: 13.01%;
+        width: 13.92%;
     }
 
     .hero {
@@ -325,8 +326,6 @@ footer img {
         background-repeat: no-repeat, no-repeat;
         background-position: 116% 63%, -44% 5%;
         background-size: auto, 42%;
-        
-    
     }
 
     .hero::after {
@@ -337,7 +336,6 @@ footer img {
 
     .hero img {
         width: 68%;
-        // position: absolute;
         top: 68%;
         left: 53%;
         // z-index: 2;
@@ -345,20 +343,136 @@ footer img {
     }
 
     .benefits {
-        padding-top: 15rem; 
+        padding-top: 17.5rem; 
+        visibility: hidden;
     }
 
-    /*.benefits {
-    padding-bottom: 4.6rem;
-    margin-bottom: 6rem;
-    position: relative;
-    z-index: -1;
-    }*/
+    .benefits::before {
+        border-radius: 0 0 80% 80% / 0 0 100% 100%;
+        transform: scaleX(2);
+        // content: "";
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+        // background-color: $light-purple;
+        // z-index: -2;
+    }
+
+    .benefit {
+        width: 74.61%;
+        margin: 0 auto;
+        margin-top: 3rem;
+        display: flex;
+        align-items: center;
+        text-align: left;
+    }
+
+    .benefit-number {
+        min-width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding-top: 0;
+    }
+
+    p.benefit-number {
+        margin-top: 0.4rem !important;
+    }
+
+    p.first-number{
+        margin-top: 2rem !important;
+    }
+
+    .benefit div {
+        margin-left: 2rem;
+    }
 
     .benefit h2 {
-        
+        margin-top: 0rem;
+    }
+
+    .benefit p {
+        margin: 0;
+        margin-top: 1rem
+    }
+
+    .benefit-description {
+        width: 97%;
+    }
+
+    .access {
+        position: relative;
+        padding-top: 14.8rem;
+    }
+
+    .access::before {
+        content: "";
+        // background-color: rgba($color: #000000, $alpha: 0.5);
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 20%;
+        left: 0;
+        background-image:   url("../../assets/images/bg-pattern-3.svg");
+        background-repeat: no-repeat;
+        background-position: 90% 99%;
+        background-size: auto;
+    }
+
+    .access img {
+        width: 36.59%;
+        position: absolute;
+        top: 5.7%;
+        left: 5%;
+    }
+
+    .access-card {
+        width: 66.93%;
+        margin-left: auto;
+        margin-right: 2.5rem;
+        text-align: left;
+        padding-left: 3.53rem;
+        padding-top: 3.4rem;
+        padding-bottom: 3.5rem;
+    }
+
+    .access-card h3 {
+        font-size: 3rem;
+    }
+
+    .access p {
+        padding: 0;
+        width: 88%;
+        margin-top: 1.5rem;
     }
     
+    .access-card a {
+        margin: 0;
+        margin-top: 1.5rem;
+        text-align: center;
+        width: 37.7%;
+    }
 
+    footer {
+        margin-top: 5rem;
+        margin-bottom: 7.61rem;
+    }
+
+    footer img {
+        width: 12.47%;
+    }
+
+    .social-media {
+        width: 15.1%;
+    }
+
+
+
+
+
+
+
+    
 
 }
