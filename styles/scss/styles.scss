@@ -480,6 +480,10 @@ footer img {
         font-size: 1.125rem;
     }
 
+    header a:hover {
+        color: $green;
+    }
+
     h1 {
         font-size: 5rem;
         line-height: 5rem;
@@ -500,6 +504,7 @@ footer img {
     .hero::before {
         background-color: transparent;
         z-index: 1;
+        pointer-events: none
     }
     
     .hero::after {
@@ -507,11 +512,18 @@ footer img {
         border-radius: 0 0 80% 80%;
         transform: scaleX(1.5);
         z-index: -1;
+        pointer-events: none
     }
 
     .hero a {
         width: 11.19%;
         padding: 0.8rem 0;
+        border: 3px solid $green;
+    }
+
+    .hero a:hover {
+        background-color: transparent;
+        color: $green;
     }
 
     .hero img {
@@ -571,6 +583,7 @@ footer img {
         top: 10.6%;
         left: -8%;
         z-index: 2;
+        pointer-events: none;
     }
 
     .access img {
@@ -605,7 +618,13 @@ footer img {
         margin-top: 2rem;
         width: 28.5%;
         font-size: 1.125rem;
-        padding-top: 1rem;
+        padding: 0.5rem 0;
+        border: 3px solid $green;
+    }
+
+    .access-card a:hover {
+        background-color: transparent;
+        color: $green;
     }
 
     footer {
@@ -617,6 +636,10 @@ footer img {
 
     footer img {
         width: 13%;
+    }
+
+    footer a:hover .social-logo {
+        background-color: $dark-purple;
     }
 }
 
