@@ -342,8 +342,6 @@ footer img {
         width: 68%;
         top: 68%;
         left: 53%;
-        // z-index: 2;
-        // transform: translateX(-50%);
     }
 
     .benefits {
@@ -354,13 +352,6 @@ footer img {
         border-radius: 0 0 80% 80% / 0 0 100% 100%;
         transform: scaleX(3);
         top: 4%;
-        // content: "";
-        // position: absolute;
-        // left: 0;
-        // width: 100%;
-        // height: 100%;
-        // background-color: $light-purple;
-        // z-index: -2;
     }
 
     .benefit {
@@ -411,7 +402,6 @@ footer img {
 
     .access::before {
         content: "";
-        // background-color: rgba($color: #000000, $alpha: 0.5);
         position: absolute;
         width: 100%;
         height: 100%;
@@ -578,33 +568,20 @@ footer img {
     }
 
     .access::before {
-    //     content: "";
-    //     // background-color: rgba($color: #000000, $alpha: 0.5);
-    //     position: absolute;
-    //     width: 100%;
-    //     height: 100%;
         top: 10.6%;
         left: -8%;
         z-index: 2;
-    //     background-image:   url("../../assets/images/bg-pattern-3.svg");
-    //     background-repeat: no-repeat;
-    //     background-position: 90% 99%;
-    //     background-size: auto;
     }
 
     .access img {
         width: 33.5%;
-        //     position: absolute;
         top: 2%;
         left: 11.5%;
     }
 
     .access-card {
         width: 50.7%;
-        // margin-top: -0.5rem;
-        //     margin-left: auto;
         margin-right: 10.4rem;
-        //     text-align: left;
         padding-left: 4rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
@@ -618,7 +595,6 @@ footer img {
     }
 
     .access p {
-    //     padding: 0;
         width: 90%;
         margin-top: 2rem;
         font-size: 1.125rem;
@@ -626,9 +602,7 @@ footer img {
     }
     
     .access-card a {
-    //     margin: 0;
         margin-top: 2rem;
-    //     text-align: center;
         width: 28.5%;
         font-size: 1.125rem;
         padding-top: 1rem;
@@ -638,14 +612,21 @@ footer img {
         width: 54%;
         margin: 0 auto;
         margin-top: 3.5rem;
-        //     margin-bottom: 7.61rem;
+        margin-bottom: 5rem;
     }
 
     footer img {
         width: 13%;
     }
+}
 
-    .social-media {
-    //     width: 15.1%;
-    } 
+/* LARGE DISPLAYS */
+@media (min-width: 1600px) {
+    header,
+    main,
+    footer {
+        max-width: 1600px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }

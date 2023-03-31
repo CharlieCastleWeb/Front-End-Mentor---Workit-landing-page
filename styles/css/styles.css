@@ -595,8 +595,19 @@ footer img {
     width: 54%;
     margin: 0 auto;
     margin-top: 3.5rem;
+    margin-bottom: 5rem;
   }
   footer img {
     width: 13%;
+  }
+}
+/* LARGE DISPLAYS */
+@media (min-width: 1600px) {
+  header,
+  main,
+  footer {
+    max-width: 1600px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }/*# sourceMappingURL=styles.css.map */
