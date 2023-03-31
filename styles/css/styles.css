@@ -337,7 +337,7 @@ footer img {
 }
 
 /* TABLET LAYOUT */
-@media (min-width: 650px) {
+@media (min-width: 600px) {
   header {
     padding: 0 2.5rem;
     padding-top: 2rem;
@@ -469,5 +469,134 @@ footer img {
   }
   .social-media {
     width: 15.1%;
+  }
+}
+/* DESKTOP LAYOUT */
+@media (min-width: 1000px) {
+  header {
+    padding-left: 10.3125rem;
+    padding-right: 10.3125rem;
+    padding-top: 3.5rem;
+  }
+  header img {
+    width: 8.631%;
+  }
+  header a {
+    font-size: 1.125rem;
+  }
+  h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+    width: 40%;
+    letter-spacing: 0.15rem;
+  }
+  .underline {
+    text-underline-offset: 10px;
+  }
+  .hero {
+    background: none;
+    z-index: 2;
+    padding-bottom: 15rem;
+  }
+  .hero::before {
+    background-color: transparent;
+    z-index: 1;
+  }
+  .hero::after {
+    height: 100%;
+    border-radius: 0 0 80% 80%;
+    transform: scaleX(1.5);
+    z-index: -1;
+  }
+  .hero a {
+    width: 11.19%;
+    padding: 0.8rem 0;
+  }
+  .hero img {
+    width: 53%;
+    top: 56.5%;
+    left: 51.6%;
+  }
+  .hero::before {
+    background-position: 104% 48%, -12% 5%;
+    background-size: auto, 24%;
+  }
+  .benefits {
+    display: flex;
+    justify-content: center;
+    padding-top: 24rem;
+    padding-bottom: 8rem;
+    margin-bottom: 8.7rem;
+  }
+  .benefit {
+    display: block;
+    text-align: center;
+    width: 26.5%;
+    padding: 0;
+    margin: 0;
+  }
+  p.benefit-number {
+    margin: 0 auto !important;
+    font-size: 1.9rem;
+  }
+  .benefit div {
+    margin: 0;
+  }
+  .benefit h2 {
+    margin-top: 3.9rem;
+    font-size: 2rem;
+  }
+  .benefit div p {
+    margin: 0 auto;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+    width: 96%;
+  }
+  .benefits::before {
+    transform: scaleX(2);
+  }
+  .access::before {
+    top: 10.6%;
+    left: -8%;
+    z-index: 2;
+  }
+  .access img {
+    width: 33.5%;
+    top: 2%;
+    left: 11.5%;
+  }
+  .access-card {
+    width: 50.7%;
+    margin-right: 10.4rem;
+    padding-left: 4rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    margin-bottom: 4rem;
+  }
+  .access-card h3 {
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.23rem;
+  }
+  .access p {
+    width: 90%;
+    margin-top: 2rem;
+    font-size: 1.125rem;
+    line-height: 2rem;
+  }
+  .access-card a {
+    margin-top: 2rem;
+    width: 28.5%;
+    font-size: 1.125rem;
+    padding-top: 1rem;
+  }
+  footer {
+    width: 54%;
+    margin: 0 auto;
+    margin-top: 3.5rem;
+  }
+  footer img {
+    width: 13%;
   }
 }/*# sourceMappingURL=styles.css.map */
